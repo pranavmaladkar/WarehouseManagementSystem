@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Order Status Check</title>
+		<style>
+			* {
+				margin: 0;
+				box-sizing: border-box;
+			}
+			header {
+				display: flex;
+				height: 100px;
+				align-items: center;
+				justify-content: center;
+				background-color: red;
+			}
+			h1 {
+				color: white;
+				text-transform: capitalize;
+			}
+			.container {
+				display: flex;
+				height: 200px;
+				align-items: center;
+				justify-content: center;
+			}
+			.val label {
+				font-size: 1.5em;
+				font-weight: bold;
+			}
+			.val input {
+				font-size: 1.5em;
+			}
+			#submit, input {
+				margin-top: 0.8em;
+				font-size: 1.2em;
+				font-weight: bold;
+			}
+			.type {
+				margin-top: 10px;
+			}
+			.type label {
+				font-size: 1.5em;
+				font-weight: bold;
+			}
+			.type select {
+				font-size: 1.2em;
+				margin-left: 55px;
+			}
+		</style>
+	</head>
+	<body>
+		 <br>
+		<header>
+			<h1>Check your Order Status By Entering your mobile number</h1>
+		</header>
+		<div class="container">
+			<div class="infoBox">
+				<form action="stat.php" method="post">
+					<div class="val">
+						<label for="mobileNo">Mobile Number: </label>
+						<input
+							type="text"
+							name="mobileNo"
+							size="10"
+							minlength="10"
+							maxlength="10"
+							required
+						/>
+					</div>
+					<div class="type">
+						<label for="orderType">Order Type:</label>
+						<select name="orderType" id="type">
+							<option selected disabled>Please Select The Order Type</option>
+							<option value="storage">Storage</option>
+							<option value="vehicle">Vehicle</option>
+						</select>
+					</div>
+					<input type="submit" value="Submit" id="button" />
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Store Your Goods</title>
+		<style>
+
+.radial{
+  background-image: radial-gradient(rgb(253, 251, 238), rgb(240, 240, 240) , #f5e4c9);
+}
+			form {
+				max-width: 600px;
+				margin: 0 auto;
+				padding: 20px;
+				border: 1px solid #ddd;
+				border-radius: 10px;
+				font-family: Arial, sans-serif;
+				background-color: #f4eada;
+				box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+			}
+
+			h1 {
+				text-align: center;
+				font-size: 2em;
+				color: #333;
+				margin-bottom: 20px;
+				text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
+			}
+
+			label {
+				display: block;
+				margin-bottom: 5px;
+				font-weight: bold;
+				color: #333;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			input[type="tel"],
+			select,
+			textarea {
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				box-sizing: border-box;
+				margin-bottom: 10px;
+				font-size: 1em;
+				color: #333;
+				background-color: #fff;
+				transition: box-shadow 0.2s ease-in-out;
+			}
+
+			input[type="text"]:focus,
+			input[type="email"]:focus,
+			input[type="tel"]:focus,
+			select:focus,
+			textarea:focus {
+				outline: none;
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			}
+
+			select {
+				appearance: none;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23333' d='M0 0l6 8 6-8H0z'/%3E%3C/svg%3E");
+				background-repeat: no-repeat;
+				background-size: 12px 8px;
+				background-position: right center;
+			}
+
+			textarea {
+				resize: vertical;
+			}
+
+			button[type="submit"] {
+				display: block;
+				margin-top: 20px;
+				padding: 10px 20px;
+				background-color: #333;
+				color: #fff;
+				border: none;
+				border-radius: 5px;
+				font-size: 1.2em;
+				cursor: pointer;
+				box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+				transition: background-color 0.2s ease-in-out,
+					box-shadow 0.2s ease-in-out;
+			}
+
+			button[type="submit"]:hover {
+				background-color: #555;
+				box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="radial">
+		<br><br>
+	
+		<form action="saveInfo.php" method="post">
+			<h1 style="font-family: 'Times New Roman', Times, serif;">STORE YOUR GOODS </h1>
+			<label for="company-name">Company Name:</label>
+			<input type="text" id="company-name" name="company-name" required />
+
+			<label for="company-email">Company Email:</label>
+			<input type="email" id="company-email" name="company-email" required />
+
+			<label for="contact-number">Contact Number:</label>
+			<input type="tel" id="contact-number" name="contact-number" required />
+
+			<label for="pickup-date">Pickup Date:</label>
+			<input type="date" id="pickup-date" name="pickup-date" required />
+
+			<label for="reason-for-storage">Reason for Storage:</label>
+			<select id="reason-for-storage" name="reason-for-storage" required>
+				<option value="">Please select</option>
+				<option value="shortage-of-space">Shortage of space</option>
+				<option value="renovation">Renovation</option>
+				<option value="relocation">Relocation</option>
+				<option value="space-optimization">Space optimization</option>
+			</select>
+
+			<label for="vehicle-needed">Vehicle Needed:</label>
+			<select id="vehicle-needed" name="vehicle-needed" required>
+				<option value="">Please select</option>
+				<option value="2 Wheeler">2 Wheeler</option>
+				<option value="3 Wheeler">3 Wheeler</option>
+				<option value="4 Wheeler">4 Wheeler</option>
+			</select>
+
+			<label for="list-of-goods">List of Goods:</label>
+			<textarea
+				id="list-of-goods"
+				name="list-of-goods"
+				rows="5"
+				required
+			></textarea>
+
+			<label for="approx-space-needed">Approximate Space Needed:</label>
+			<input
+				type="text"
+				id="approx-space-needed"
+				name="approx-space-needed"
+				required
+			/>
+
+			<label for="duration-of-storage">Duration of Storage:</label>
+			<select id="duration-of-storage" name="duration-of-storage" required>
+				<option value="">Please select</option>
+
+				<option value="1-month">1 month</option>
+				<option value="2-months">2 months</option>
+				<option value="3-months">3 months</option>
+				<option value="6-months">6 months</option>
+				<option value="1-year">1 year</option>
+			</select>
+
+			<button type="submit">Submit</button>
+			<br>
+		</form>
+		<br><br>
+	</body>
+</div>
+</html>

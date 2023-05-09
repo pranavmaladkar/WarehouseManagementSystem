@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .grad{
+            background-image: linear-gradient(to right,rgb(247, 242, 242),rgba(189, 44, 44, 0.396));
+        }
+        header{
+            
+            background-color:rgb(144, 18, 18);
+            position: fixed;
+            padding:10px ;
+            height: 87PX;
+            width: 100%;
+            margin-top:-8px;
+            border-radius:6px;
+        }
+        .toplogo{
+            display: flex;
+        }
+
+        .logo{
+            margin-top: -4px;
+            padding-left: 20px;
+            display: flex;
+        }
+        .topheading{
+            display: flex;
+            font-size: 40PX;
+             font-weight:bolder;
+            letter-spacing: 1pt;
+            margin-top:2mm;
+            margin-left:25px;
+            color:ghostwhite;
+            font-style:normal;
+        }
+        .container{
+            display: inline-block;
+        }
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: black;
+        }
+        button{
+            padding: 5px;
+            width: 100px;
+            margin-left: 15px;
+        }
+        .table{
+            display: flex;
+            font-size:23px;
+            margin-left:160px;
+            margin-top:-55px;
+            font-weight: bold;
+            margin-right: 2px;
+            
+        }
+        td{
+            border-radius:2%;
+        }
+
+        .para{
+            text-align: center;
+            font-size:28px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:rgb(25, 23, 23);
+            padding-left: 44px;
+            margin-left: 42px;
+        }
+
+        .storables{
+            text-align: center;
+            text-decoration: underline;
+            letter-spacing: 4px;
+            
+            font-size:50px;
+            font-weight:bolder;
+            color: rgb(169, 28, 28);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+        }
+
+        .subheadings{
+            margin-left:48px;
+            font-size:30px;
+            font-weight:bolder;
+            color: rgb(30, 30, 135);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration: underline;
+        
+        }
+        .p{
+            display: flex;
+            font-size:24px;
+            padding-left:98px;
+            
+            
+        }
+       .image123{
+        display: flex;
+          float: left;
+          margin-left: 55px;
+          border-radius: 8px;
+       }
+       .img123{
+        display: flex;
+        float: right;
+        margin-right: 32px;
+       }
+        .REGISTER{
+            display: flex;
+            width: 142px;
+            height: 38px;
+            
+            margin-left:525px; 
+            font-weight: bold;
+           text-decoration: underline;
+          
+            color: brown;
+            text-align: center;
+        }
+
+        .footcolor{
+            display: flex;
+            font-size: 21px;
+        }
+        .foot1{
+            display: flex;
+            margin-left: 96px;
+    
+        }
+
+        .foot2{
+            display: flex;
+        
+            margin-left:282px;
+            
+           
+        }
+        .foot3{
+            display: flex;
+            
+            margin-left: 330px;
+            
+          
+        }
+        .footcity{
+             font-size: 21px;
+            text-align: center;
+           
+        }
+        
+    </style>
+
+        <script >
+            document.querySelectorAll('a[href^="#"]').
+            forEach(anchor =>{
+             anchor.addEventListener("click", function(e)
+             {
+               e.preventDefault ();
+                     document.querySelector(this.getAttribute("href")).scrollIntoview(
+                        {
+                behavior: "smooth"
+                    });    
+                });
+             }); 
+
+     </script>
+</head>
+<body>
+
+    <div class="grad">
+
+    <div class="header">
+        <!--start of header-->
+    <header>
+          <div class="toplogo">
+            <div class="logo">
+        <img src="sygLOGO.svg" alt="logo" height="100px" width="105px" />
+                    </div>
+        </div>
+            <div class="table">
+                <nav>
+             <a href="#home" style="color: ghostwhite; font-family:'Times New Roman', Times, serif; text-decoration: none;">HOME</a> &nbsp;  &nbsp;  &nbsp;  &nbsp;
+            <a href="#storable" style="color: ghostwhite; font-family: 'Times New Roman', Times, serif; text-decoration: none;">STORABLES</a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+            <a href="#Storeplans1" style="color: ghostwhite; font-family: 'Times New Roman', Times, serif; text-decoration: none;"> STORAGE PLANs</a> &nbsp;  &nbsp;  &nbsp;  &nbsp;
+             <a href="#Benefits" style="color: ghostwhite;  font-family: 'Times New Roman', Times, serif; text-decoration: none;"> BENEFITS</a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+            <a href="#aboutus" style="color: ghostwhite; font-family:'Times New Roman', Times, serif; text-decoration: none;">ABOUT US </a> &nbsp;  &nbsp;  &nbsp;  &nbsp;
+            <div class="container">
+                <button><a href="checkStat.html">Check</a></button>
+                <button><a href="loginPage.html">ADMIN</a></button>
+            </div>
+
+        </nav>
+            </div>
+     </header>
+            <!--end of header-->
+
+        <section id="home">
+       
+        <br> <br> <br> 
+            
+        <br> <br> <br>  
+
+       
+
+    <div class="photos">
+    <img src="Householdcoverphoto.jpeg" alt="drive02" height="auto" width="1420px" style="border-radius: 20px" />
+    <br>
+    <img src="businesscoverphoto22.jpeg" alt="household_storage" height="auto" width="1420px" style="border-radius: 20px"/>
+    <br>
+    </div>
+    
+    <br>
+</div>
+<p class="para">
+    We provide an innovative and secure storage solution for homes ,vehicles and businesses. <br>
+    Our flexible storage plans cater to anyone: whether you need to store <br>
+    business inventory ,household goods, or vehicles we keep it safe!
+</p>
+</section>
+
+        <section id="storable">    
+
+            <br> <br>
+
+         <div class="storables">
+          STORABLES
+         </div>
+         <br>
+         <br> <br> <br>
+           <div class="subheadings">
+            1. HOUSEHOLD  STORAGE :-
+           </div>    
+           <br>
+             <div class="image123">
+                <img src="2_11.png" alt="household"  height="280px" width="320px"/>
+             </div>
+
+             <div class="img123">
+                <img src="householdstorage22.jpg" alt="household"  height="230px" width="230px"/>
+            </div>
+
+
+             <div class="p">
+                <br>
+                Whether it be store furniture, appliances, crockery, sports equipment <br>
+                ,  toys,baby belongings,luggage sets etc. we ensure that your <br>
+                things are well-maintained. <br>
+                Safely transported and returned to you when you need them. <br>
+                Press here for Store your household goods. <br>
+                Store your kid's toys, photo albums, baby books, <br>
+                 decorations, trophies, etc. with us. <br>
+            
+             </div>
+
+              <p class="REGISTER"> 
+                    <a href="storageForm.html" target="_blank" style="color: crimson;font-size:28px;">REGISTER</a>
+                </p>
+
+              <br>
+              <br>
+              <div class="subheadings">
+                2. MANUFACTURERS  GOODS :-
+               </div>  
+               <br>
+              
+              <div class="image123">
+                <img src="buisenessstoragepic.jpg" alt="household"  height="280px" width="320px"/>
+             </div>
+
+             <div class="img123">
+                <img src="buisenessstorage222.jpg" alt="household"  height="230px" width="230px"/>
+            </div>
+
+
+             <div class="p">
+                <br>
+                Stock your office and business supplies, marketing collateral, <br>
+                 important documents etc. with us and savehuge costs <br>
+                 of running your own warehouse. <br>
+                 <br>
+
+
+                
+                 
+             </div>
+             <p class="REGISTER"> 
+                 <a href="storageForm.html" target="_blank" style="color: crimson;font-size:28px;">REGISTER</a>
+            </p>
+
+             <br> <br> <br>
+
+            <br>
+            <br>
+             <div class="subheadings">
+                3. VEHICLES:-
+               </div>  
+               <br>
+              
+               <div class="img123">
+                <img src="truck22.JPG" alt="household"  height="230px" width="230px"/>
+            </div>
+
+              <div class="image123">
+                <img src="vehiclephoto.png" alt="household"  height="280px" width="320px"/>
+             </div>
+             <div class="p">
+                <br>
+                Worn out vehicle has sentimental value or just  <br>
+                simply need space to park your car. <br>
+                We have the ideal parking stop for both<br>
+                 <br>
+                
+                 
+             </div>
+             <p class="REGISTER"> 
+                <a href="vehicleForm.html" target="_blank" style="color: crimson;font-size:28px;">REGISTER</a>
+            </p>
+
+            <br> <br> <br>
+            
+
+            </section>   
+
+            <section id="Storeplans1">
+
+                <br> <br> <br>
+
+             <div class="storables">
+            STORAGE PLANS
+               </div>
+               <BR>
+            </BR> <br> <br> <br>
+
+            <div class="subheadings">
+                1.BOX STORAGE
+               </div>  
+               <br> <BR> </BR>
+              <div class="image123">
+                <img src="box_storage.png" alt="household"  height="280px" width="320px"/>
+                <br> <br>
+               </div>
+
+               <div class="p">
+            We at Store your goods know that finding space for personal storage can be difficult. <br>
+            That's why we're committed to provide the perfect storage solutions. <br>
+            We pride ourselves on being the best when it comes to helping you with storing your belongings. <br>
+            Your privacy , security and hygiene would be our prime importance. <br>
+
+               </div>
+                <br> <br> <br> <br> <br> <br>
+                <br> <br> <br> <br> <br> <br>
+
+
+                <div class="subheadings">
+                2. SHARED STORAGE
+                <br> <br>
+               </div>
+                   
+
+                   <div class="image123">
+                    <img src="sharedstorage.jpg" alt="household"  height="280px" width="320px"/>
+                   </div>
+
+                   <div class="p">
+
+                    The shared storage plan is made for you if you want a proper storage facility with cheaper price. <br>
+                    The storage will be shared with one or more storage holders but there will be no compromises <br>
+                    on the levels of security, hygiene and our promises.The shared storage plan is made for you <br>
+                     if you want a proper storage facility with cheaper price. <br>
+                     The storage will be shared with one or more storage holders but there <br>
+                    will be no compromises on the levels of <br>
+                    security, hygiene and our promises. <br>
+
+                   </div>
+
+                   <br> <br> <br> <br> <br>
+                <br> <br> <br> <br> <br>
+
+                <div class="subheadings">
+                    3.PRIVATE STORAGE 
+                </div> <br>
+
+                <div class="image123">
+                    <img src="private_storage.jpg" alt="household"  height="280px" width="320px"/>
+                   </div>
+                   <br>
+
+                   <div class="p">
+                    Store your goods even brings you an option to store your belongings privately.  <br>
+                     The items are cared for, wrapped up and professionally packed and locked into individual containers.
+                   </div> <br>
+                   
+                   <br> <br> <br>   <br> <br> <br>
+                   <br> <br> <br> <br> <br>  <br>
+
+                </section>
+
+                <section id="Benefits"> 
+
+
+                   <div class="storables">
+                    BENEFITS
+                   </div>
+
+                   <p class="para">
+                    Store Your Goods provides holistic logistics solutions including storage, order processing,
+                    last mile delivery with cash on delivery facilities, and many other value added services at
+                    a fraction of the cost.   </p>
+
+                    <BR></BR>
+                   <div class="subheadings">
+                   1. LOWEST PRICE and NO LOCK IN PERIOD
+                   <br> <br>
+                   </div>
+                   <div class="image123">
+                         <img src="lowestprice.jpg" alt="household"  height="230px" width="230px"/>
+                     </div>
+                     <div class="img123">
+                        <img src="nolockin.jpg" alt="household"  height="230px" width="230px"/>
+                    </div>
+             <div class="p">
+                <br>
+                Whether it be store furniture, appliances, crockery, sports equipment,  toys, <br>
+                 baby belongings,luggage sets etc. we ensure that your things are <br>
+                 well-maintained. <br>
+                Safely transported and returned to you when you need them. <br>
+                Press here for Store your household goods. <br>
+                Store your kid's toys, photo albums, baby books, <br>
+                 decorations, trophies, etc. with us. <br>
+                
+             </div>
+             
+                
+                      <br> <br> <br>
+                   <br> <br>   <br>
+
+                   <div class="subheadings">
+                   2. ORDER MANAGEMENT and EASY CONTRACTING
+                   <br> <br>
+                   </div>
+
+                   <div class="image123">
+                         <img src="ordermanagement.jpg" alt="household"  height="230px" width="230px"/>
+                     </div>
+
+                     <div class="img123">
+                        <img src="easycontracting.jpg" alt="household"  height="230px" width="230px"/>
+                    </div>
+
+                     <div class="p">
+                        <br>
+                        Whether it be store furniture, appliances, crockery, sports equipment,  toys, <br>
+                         baby belongings,luggage sets etc. we ensure that your things are <br>
+                         well-maintained. <br>
+                        Safely transported and returned to you when you need them. <br>
+                        Press here for Store your household goods. <br>
+                        Store your kid's toys, photo albums, baby books, <br>
+                         decorations, trophies, etc. with us. <br>
+                         </div>
+
+                      <br><br> <br>
+                   <br> <br>   <br>
+
+                   <div class="subheadings">
+                    3. INTEGRATED COURIER SERVICES  and  RETURNS MANAGEMENT
+                    <br> <br>
+                    </div>
+
+                    <div class="image123">
+                        <img src="courierservice.jpg" alt="household"  height="230px" width="230px"/>
+                    </div>
+
+                    <div class="img123">
+                       <img src="Return.jpg" alt="household"  height="230px" width="230px"/>
+                   </div>
+
+                   <div class="p">
+                    <br>
+                    Whether it be store furniture, appliances, crockery, sports equipment,  toys, <br>
+                     baby belongings,luggage sets etc. we ensure that your things are <br>
+                     well-maintained. <br>
+                    Safely transported and returned to you when you need them. <br>
+                    Press here for Store your household goods. <br>
+                    Store your kid's toys, photo albums, baby books, <br>
+                     decorations, trophies, etc. with us. <br>
+                 </div>
+                </section>
+                   <br><br> 
+                   <br> <br> <br>   <br>
+
+                   <section id="aboutus">
+
+                    
+
+                        <!-- Start of footer -->
+                        <footer>
+                         <div class="footcolor">
+                         <div class="foot1">
+                         <p>adddress :S.S layout <br>
+                             Davangere <br>
+                             Pin Code - 201305 </p>
+                          </div>
+                
+                         <div class="foot2">
+                          <p>  Phone Number:- 9591446124  <br>
+                             Mon-Sat 9:30am - 8:00pm <br>
+                          </p> 
+                         </div>
+                
+                         <div class="foot3">
+                           <br>
+                             Mail:<br>
+                             storeyourgoods@gmail.com <br>
+                              <br>  <br>
+                             
+                         </div>
+                     </div> 
+                
+                         <div class="footcity">
+                             <br>
+                             Cities we are present In:Davangere, Delhi-NCR, Mumbai, Hyderabad, Bengaluru, Noida, Gurgaon, Ghaziabad, <br>
+                              Rewari, Bulandshahr, Sonipat, Meerut,  Rohtak, Manesar,Noida, Secunderabad.
+                         </div>
+                
+                        </footer>
+                        <!--end of footer-->  
+
+                   </section>   
+
+                </div>         
+  </body>
+  </html>
